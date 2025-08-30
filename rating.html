@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY WEB JOURNEY Rating</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:blue;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .rating-container {
+      margin-top: 50px;
+      background-color:rgb(232, 192, 255);
+      padding: 50px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .stars {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .star {
+      color:blue;
+      transition: color 0.9s;
+    }
+
+    .star.hover,
+    .star.selected {
+      color:red;
+      
+    }
+
+    .thank-you {
+      margin-top: 15px;
+      font-size: 1.5rem;
+      color: green;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="rating-container">
+    <h2>WELCOME IN MY WEB PAGE</h2>
+    <div class="stars">
+      <span class="star" data-value="1">&#9733;</span>
+      <span class="star" data-value="2">&#9733;</span>
+      <span class="star" data-value="3">&#9733;</span>
+      <span class="star" data-value="4">&#9733;</span>
+      <span class="star" data-value="5">&#9733;</span>
+    </div>
+    <div class="thank-you">Thanks for rating!</div>
+  </div>
+</body>
+</html>

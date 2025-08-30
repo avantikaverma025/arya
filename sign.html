@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      width: 300px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #4a3fdb;
+      user-select: none;
+    }
+    input {
+      width: 100%;
+      padding: 10px 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 2px solid #ddd;
+      font-size: 1rem;
+      outline-offset: 2px;
+      transition: border-color 0.3s ease;
+    }
+    input:focus {
+      border-color: #4a3fdb;
+      outline: none;
+      box-shadow: 0 0 8px #aab8ff99;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4a3fdb;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #3b34af;
+    }
+    .error {
+      color: #d93025;
+      margin-bottom: 10px;
+      font-weight: bold;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="login-container">
+    <link rel="main.html"href="main.html"/>
+    <h2>Login</h2>
+    <div class="error" id="error-msg"></div>
+    <input type="text" id="username" placeholder="Username" autocomplete="off" />
+    <input type="password" id="password" placeholder="Password" autocomplete="off" />
+    <button id="login-btn">Login</button>
+  </div>
+
+  
